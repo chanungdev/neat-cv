@@ -1,0 +1,80 @@
+# 샘플 데이터 (가상 인물). 실제 이력은 private 레포에서 관리하세요.
+
+profile:
+  name: 홍길동
+  title: 시니어 소프트웨어 아키텍트
+  # 이름 아래 한 줄. "누구이고 무엇을 잘하는가"
+  headline: 커머스·핀테크 플랫폼의 성능 개선과 인프라 전환을 이끄는 15년 차 아키텍트
+  # 맨 위 카드로 보여줄 핵심 성과 3개
+  highlights:
+    - { value: 57%, label: 모바일 초기 로딩 단축 }
+    - { value: 10배, label: 검색 응답 속도 개선 }
+    - { value: 0건, label: 대형 프로모션 피크 장애 }
+  # type: phone | email | homepage | github | linkedin
+  contacts:
+    - { type: phone, value: 010-1234-5678 }
+    - { type: email, value: gildong@example.com }
+    - { type: homepage, value: gildong.dev }
+    - { type: github, value: gildong }
+    - { type: linkedin, value: gildong }
+  summary: >-
+    대규모 커머스·핀테크 시스템을 설계하고 운영해 온 15년 차 엔지니어.
+    프론트엔드부터 인프라까지 전 계층을 다루며, 성능 개선과 클라우드 전환을 주도했습니다.
+
+# skills.items, projects의 impact/highlights 에서 *강조*는 포인트 색 굵게 표시.
+# 문장이 *로 시작하면 YAML 문법과 겹치므로 따옴표로 감싸세요.
+skills:
+  - category: Frontend
+    items: ["*Vue 3*", "*React*", TypeScript, Vite]
+  - category: Backend
+    items: ["*Java*", "*Spring Boot*", Node.js, NestJS]
+  - category: Infra
+    items: ["*Kubernetes*", "*AWS*", Terraform, OpenSearch]
+
+experience:
+  - company: 프리랜서 (개인사업자)
+    role: 아키텍트
+    period: 2021.03 – 현재
+  - company: 대형 커머스사
+    role: 시니어 엔지니어
+    period: 2015.01 – 2021.02
+  - company: SI 기업
+    role: 개발자
+    period: 2011.03 – 2014.12
+
+projects:
+  - name: 모바일 쇼핑몰 프론트엔드 재구축
+    period: 2025.03 – 2025.12
+    client: 대형 홈쇼핑사
+    role: 프론트엔드 아키텍트 (6명 중 리드)
+    stack: [Vue 3, Vite, Kubernetes]
+    summary: 레거시 jQuery 모바일 웹을 Vue 3 SPA로 전환
+    impact: 초기 로딩 *4.2초 → 1.8초*, 신규 화면 개발 기간 *40% 단축*
+    highlights:
+      - "*초기 로딩 4.2초 → 1.8초*: 번들 분할, 이미지 최적화"
+      - "*신규 화면 개발 기간 40% 단축*: 공통 컴포넌트 라이브러리 설계"
+  - name: 상품 검색 인프라 구축
+    period: 2023.06 – 2024.12
+    client: 핀테크 스타트업
+    role: 인프라 아키텍트
+    stack: [OpenSearch, Kubernetes, Terraform]
+    summary: 상품 검색을 RDB LIKE 쿼리에서 OpenSearch 기반으로 전환
+    impact: 검색 응답 p95 *1.2초 → 120ms*, 환경 구성 *2일 → 1시간*
+    highlights:
+      - "*검색 응답 p95 1.2초 → 120ms*: RDB LIKE 쿼리를 OpenSearch로 전환"
+      - "*환경 구성 2일 → 1시간*: Terraform으로 인프라 코드화"
+  - name: 주문 시스템 MSA 전환
+    period: 2018.01 – 2020.12
+    client: 대형 커머스사
+    role: 백엔드 리드
+    stack: [Java, Spring Boot, Kafka]
+    summary: 모놀리식 주문 시스템을 도메인 단위 서비스로 분리
+    impact: 프로모션 피크 장애 *0건*, 배포 주기 *월 1회 → 주 3회*
+    highlights:
+      - "*대형 프로모션 피크 장애 0건*: 주문 도메인 분리와 Kafka 비동기 처리"
+      - "*배포 주기 월 1회 → 주 3회*: 서비스별 독립 배포 파이프라인 구축"
+
+education:
+  - school: 한국대학교
+    major: 컴퓨터공학과 학사
+    period: 2007.03 – 2011.02
