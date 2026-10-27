@@ -27,6 +27,7 @@
   set par(leading: 0.65em, spacing: 0.8em)
   set list(spacing: 0.55em, marker: text(fill: muted)[•])
   show heading.where(level: 1): it => block(
+    sticky: true,
     above: 1.8em,
     below: 0.9em,
     width: 100%,

@@ -78,3 +78,9 @@ education:
   - school: 한국대학교
     major: 컴퓨터공학과 학사
     period: 2007.03 – 2011.02
+
+# 선택. 없으면 이력서에 자격증 섹션이 나오지 않음
+certifications:
+  - name: 정보처리기사
+    issuer: 한국산업인력공단
+    date: "2010.11"

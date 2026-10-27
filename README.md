@@ -60,6 +60,7 @@ cp neat-cv/data/career.yaml career.yaml   # private 레포에서
 | `experience` | `{ company, role, period }` 목록. 직무(role)는 강조색 |
 | `projects` | 아래 참고 |
 | `education` | `{ school, major, period }` 목록 |
+| `certifications` | `{ name, issuer, date }` 목록 (선택). 없으면 자격증 섹션을 출력하지 않음 |
 
 `projects` 항목:
 
@@ -77,6 +78,7 @@ cp neat-cv/data/career.yaml career.yaml   # private 레포에서
 - 값이 `*`로 시작하면 YAML 문법과 겹치므로 따옴표로 감쌉니다: `"*Vue 3*"`, `"*로딩 4.2초 → 1.8초*: 번들 분할"`
 - 기간 등 YAML이 숫자로 해석할 수 있는 값(`2025.03`)은 `2025.03 – 2025.12`처럼 문장 형태로 쓰거나 따옴표로 감쌉니다.
 - 고객사명은 NDA를 확인하고 필요하면 `대형 홈쇼핑사`처럼 익명화하세요.
+- 프로젝트 항목은 페이지 사이에서 쪼개지지 않습니다. 남은 공간이 모자라면 제목부터 다음 페이지로 넘어갑니다.
 
 ### private 레포에서 사용하기
 

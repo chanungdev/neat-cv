@@ -14,9 +14,9 @@
 
 = 프로젝트 상세
 #for (i, p) in data.projects.enumerate() [
-  // 프로젝트 사이 구분선
-  #if i > 0 { block(above: 1.4em, below: 1.4em, line(length: 100%, stroke: 0.5pt + gray.lighten(40%))) }
-  #block[
+  // 프로젝트 하나를 쪼개지 않음 — 공간이 모자라면 제목부터 다음 페이지로.
+  // 구분선은 항목 끝에 붙여, 페이지가 바뀌어도 새 페이지가 선이 아닌 제목으로 시작하게 함
+  #block(breakable: false)[
     #entry(p.name, p.period)
     #md(p.impact)
     #grid(
@@ -32,5 +32,6 @@
     #for h in p.highlights [
       - #md(h)
     ]
+    #if i < data.projects.len() - 1 { block(above: 1.4em, below: 1.4em, line(length: 100%, stroke: 0.5pt + gray.lighten(40%))) }
   ]
 ]
