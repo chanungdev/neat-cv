@@ -5,11 +5,6 @@ profile:
   title: 시니어 소프트웨어 아키텍트
   # 이름 아래 한 줄. "누구이고 무엇을 잘하는가"
   headline: 커머스·핀테크 플랫폼의 성능 개선과 인프라 전환을 이끄는 15년 차 아키텍트
-  # 맨 위 카드로 보여줄 핵심 성과 3개
-  highlights:
-    - { value: 57%, label: 모바일 초기 로딩 단축 }
-    - { value: 10배, label: 검색 응답 속도 개선 }
-    - { value: 0건, label: 대형 프로모션 피크 장애 }
   # type: phone | email | homepage | github | linkedin
   contacts:
     - { type: phone, value: 010-1234-5678 }

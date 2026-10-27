@@ -16,9 +16,8 @@
 // 포인트 색. 빌드 시 --input accent="#xxxxxx" 로 바꿔볼 수 있음
 #let accent = rgb(sys.inputs.at("accent", default: "#2858b4"))
 #let muted = gray.darken(35%)
-// 선, 카드 배경 (포인트 색은 글자에만)
+// 선 색 (포인트 색은 글자에만)
 #let rule = luma(190)
-#let surface = luma(244)
 
 #let setup(title: "", body) = {
   set document(title: title, author: data.profile.name)
@@ -47,23 +46,6 @@
   show strong: set text(fill: accent)
   eval(s, mode: "markup")
 }
-
-// 핵심 성과 카드 (profile.highlights)
-#let highlight-cards() = grid(
-  columns: (1fr,) * data.profile.highlights.len(),
-  column-gutter: 0.8em,
-  ..data.profile.highlights.map(h => block(
-    width: 100%,
-    inset: (x: 1em, y: 0.8em),
-    radius: 4pt,
-    fill: surface,
-    {
-      text(size: 18pt, weight: "bold", fill: accent, h.value)
-      linebreak()
-      meta(h.label)
-    },
-  )),
-)
 
 #let header() = {
   let p = data.profile

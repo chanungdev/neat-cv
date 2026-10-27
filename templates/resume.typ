@@ -2,8 +2,6 @@
 #show: setup.with(title: data.profile.name + " 이력서")
 
 #header()
-#v(1em)
-#highlight-cards()
 
 = 요약
 #data.profile.summary
