@@ -54,7 +54,7 @@ cp neat-cv/data/career.yaml career.yaml   # private 레포에서
 | `profile.name`, `title` | 이름, 직함 (이름 옆 강조색) |
 | `profile.headline` | 이름 아래 한 줄 소개. "누구이고 무엇을 잘하는가" |
 | `profile.contacts` | `{ type, value }` 목록. type: `phone`, `email`, `homepage`, `github`, `linkedin` |
-| `profile.summary` | 요약 문단 |
+| `profile.summary` | 소개 문단 |
 | `skills` | `{ category, items: [...] }` 목록 |
 | `experience` | `{ company, role, period }` 목록. 직무(role)는 강조색 |
 | `projects` | 아래 참고 |

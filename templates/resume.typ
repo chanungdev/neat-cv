@@ -3,7 +3,7 @@
 
 #header()
 
-= 요약
+= 소개
 #data.profile.summary
 
 = 기술 스택
