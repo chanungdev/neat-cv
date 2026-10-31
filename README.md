@@ -56,7 +56,7 @@ cp neat-cv/data/career.yaml career.yaml   # private 레포에서
 | `profile.contacts` | `{ type, value }` 목록. type: `phone`, `email`, `homepage`, `github`, `linkedin` |
 | `profile.summary` | 소개 문단 |
 | `skills` | `{ category, items: [...] }` 목록 |
-| `experience` | `{ company, role, period }` 목록. 직무(role)는 강조색 |
+| `experience` | `{ company, role, period, highlights }` 목록. 직무(role)는 강조색. `highlights`(주요 수행 내역 목록)는 선택 |
 | `projects` | 아래 참고 |
 | `education` | `{ school, major, period }` 목록 |
 | `certifications` | `{ name, issuer, date }` 목록 (선택). 없으면 자격증 섹션을 출력하지 않음 |
@@ -73,7 +73,8 @@ cp neat-cv/data/career.yaml career.yaml   # private 레포에서
 
 작성 팁:
 
-- **강조**: `skills.items`, `impact`, `highlights`에서 `*텍스트*`로 감싸면 강조색 굵게 표시됩니다. 숫자 위주로 쓰세요.
+- **경력과 프로젝트 역할 분리**: 경력 `highlights`에는 역할·범위·조직 기여를, 프로젝트 `impact`/`highlights`에는 정량 성과를 써서 이력서에서 같은 내용이 반복되지 않게 합니다.
+- **강조**: `skills.items`, `impact`, `highlights`(경력·프로젝트)에서 `*텍스트*`로 감싸면 강조색 굵게 표시됩니다. 숫자 위주로 쓰세요.
 - 값이 `*`로 시작하면 YAML 문법과 겹치므로 따옴표로 감쌉니다: `"*Vue 3*"`, `"*로딩 4.2초 → 1.8초*: 번들 분할"`
 - 기간 등 YAML이 숫자로 해석할 수 있는 값(`2025.03`)은 `2025.03 – 2025.12`처럼 문장 형태로 쓰거나 따옴표로 감쌉니다.
 - 고객사명은 NDA를 확인하고 필요하면 `대형 홈쇼핑사`처럼 익명화하세요.

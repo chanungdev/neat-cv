@@ -16,7 +16,7 @@ profile:
     대규모 커머스·핀테크 시스템을 설계하고 운영해 온 15년 차 엔지니어.
     프론트엔드부터 인프라까지 전 계층을 다루며, 성능 개선과 클라우드 전환을 주도했습니다.
 
-# skills.items, projects의 impact/highlights 에서 *강조*는 포인트 색 굵게 표시.
+# skills.items, experience/projects의 highlights, projects의 impact 에서 *강조*는 포인트 색 굵게 표시.
 # 문장이 *로 시작하면 YAML 문법과 겹치므로 따옴표로 감싸세요.
 skills:
   - category: Frontend
@@ -26,13 +26,23 @@ skills:
   - category: Infra
     items: ["*Kubernetes*", "*AWS*", Terraform, OpenSearch]
 
+# highlights(주요 수행 내역)는 선택. 없으면 회사·직무·기간 한 줄만 표시.
+# 역할·범위·조직 기여 위주로 쓰고, 정량 성과는 projects에 써서 중복을 피하세요.
 experience:
   - company: 프리랜서 (개인사업자)
     role: 아키텍트
     period: 2021.03 – 현재
+    highlights:
+      - 홈쇼핑·핀테크 등 *고객사 4곳*의 프론트엔드·인프라 아키텍처 자문 및 구축
+      - 프론트엔드 재구축 프로젝트에서 *6명 규모 팀 리드*, 코드 리뷰·개발 표준 수립
+      - 고객사 레거시 시스템 진단 및 단계별 전환 로드맵 수립
   - company: 대형 커머스사
     role: 시니어 엔지니어
     period: 2015.01 – 2021.02
+    highlights:
+      - 주문·결제 도메인 *백엔드 리드*, 도메인 설계 및 서비스 간 API 표준 수립
+      - 사내 기술 세미나 운영, 신입 개발자 온보딩 프로그램 설계
+      - 대형 프로모션 대비 성능 테스트·장애 대응 체계 운영
   - company: SI 기업
     role: 개발자
     period: 2011.03 – 2014.12

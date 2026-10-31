@@ -13,7 +13,18 @@
 
 = 경력
 #for e in data.experience [
-  #entry([#e.company · #text(fill: accent, e.role)], e.period)
+  #let title = [#e.company · #text(fill: accent, e.role)]
+  #if "highlights" in e [
+    // 주요 수행 내역이 있으면 회사 단위로 묶어 목록 표시
+    #block(below: 1.6em)[
+      #entry(title, e.period)
+      #for h in e.highlights [
+        - #md(h)
+      ]
+    ]
+  ] else [
+    #entry(title, e.period)
+  ]
 ]
 
 = 주요 프로젝트
